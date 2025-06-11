@@ -1,0 +1,238 @@
+:root{
+
+    /*bgcolor*/
+    --primary-color : #03151a;
+    --secondary-color : #ffffff;
+    --btn-bg-color: #bfff47;
+    --card-1-color: #f2f2f2f2;
+    --card-2-color: #022b36;
+    --star-color: #fff200;
+
+    /* text-color  */
+    ---txt-white: #ffffff;
+    ---txt-offwhite: #f5f5f5;
+    ---txt-blk: #03151a;
+    ---txt-offblk: #353535;
+    ---txt-xtra: #252525;
+    
+   
+   
+    /* gradient color  */
+    
+    --gradient-1: linear-gradient(180deg, #7a93b826, #7a93b808);
+    --gradient-4: linear-gradient(to bottom, #d6d6d6, #f5eaeaa6);
+    --gradient-5:  linear-gradient(to bottom,  #1a1a1a,  #2a2a2a);;
+    
+    
+   
+    /*others color*/
+    --scrollbar-color: var(--gradient-1);
+    --scrollbar-thump: #2a2a2a ;
+    --scrollbar-hover: #0a0a0a;
+   
+    /* transition  */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.35s ease-in-out;
+    --transition-3: 0.5s ease-in-out;
+    
+    
+
+     /* fontsize  */
+     --font-14-xsmall:0.875rem;
+     --font-16-small:1rem;
+     --font-18-semi:1.125rem;
+     --font-20-mid:1.25rem;
+     --font-22-big:1.375rem;
+
+     
+     --font-h1:4rem;
+     --font-h2:3rem;
+     --font-h3:2.375rem;
+     --font-h4:2.75rem;
+     --font-h5:1.625rem;
+     
+
+     /* font-weight  */
+     
+    
+
+     /* z-index  */
+     --z-minus:-1;
+     --z-zero:0;
+     --z-low:1;
+     --z-high:10;
+     --z-100:100;
+     --z-tooltop:1000;
+     --z-fix:1100;
+     --z-overlay:1110;
+     --z-modal:1990;
+     --z-max:9999;
+
+
+    }
+
+     /* font-family: "Inter", sans-serif; */
+    h1,h2,h3,h4,h5{
+       
+       font-family: "Inter", sans-serif;
+        
+    }
+    h1{
+        font-size: var(--font-h1);
+    }
+    h2{
+        font-size: var(--font-h2);
+    }
+    h3{
+        font-size: var(--font-h3);
+    }
+    h4{
+        font-size: var(--font-h4);
+    }
+    h5{
+        font-size: var(--font-h5);
+    }
+    
+
+    /* ----------------------------------------
+      ============= reset css  ==============
+      -------------------------------------------*/
+    *,
+    *::after,
+    *::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+
+    }
+    li{
+        list-style: none;
+    }
+
+    a,
+    img,
+    button,
+    i{
+        display: block;
+        text-transform: capitalize;
+    }
+    .btn{
+    border: 1px solid #ffffff33;
+    padding: 15px 30px;
+    border-radius: 35px;
+    max-width: 100%;
+   
+    cursor: pointer;
+    text-transform: capitalize;
+}
+    
+    input,
+    textarea{
+         font-family: "Plus Jakarta Sans", sans-serif;
+          
+    }
+    button{
+     background: none;
+     border: 0;
+     outline: 0;
+     cursor: pointer;
+    }
+    
+    a{
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        max-width: 100%;
+    }
+    img{
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+   
+    html{
+        scroll-behavior: smooth;
+       
+    }
+    body{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        transition:  all 0.5s ease-in-out;
+        animation: zoom 0.5s ease-in-out;
+         font-family: "Inter", sans-serif;
+         font-size: var(--font-18-semi);
+         color: var(---txt-xtra);
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+       
+
+      
+    }
+    /* ============----page scroll bar-----============== */
+::-webkit-scrollbar{ 
+        width: 5px;       
+}
+  
+
+::-webkit-scrollbar-track { 
+        overflow: hidden;
+        background-color:var(--scrollbar-color) ;       
+}
+   
+::-webkit-scrollbar-thumb {
+   
+    border-radius:100px;
+    background-color:var(--scrollbar-thump) ;
+    transition: 0.3s;
+    cursor: grab; 
+   
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background-color: var(--scrollbar-hover);
+  }
+
+  .pera-text{
+    color: var(---txt-xtra);
+    font-size: var(--font-18-semi);
+  }
+
+.gradient-text {
+  font-size: 120px; /* Adjust to your size */
+  font-weight: bold;
+  background: linear-gradient(to top, #2e7d32, #a5d6a7); /* dark green to light green */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+/* =====================others=========================== */
+.container{
+    max-width: 100%;
+    padding: 0.5% 1% ;
+    margin: 0 7% ;
+    transition: var(--transition-1);
+    
+}
+   section{
+    margin: 2% 6%;
+    max-width: 100%;
+    position: relative;
+    padding: 25px  0;
+    transition: var(--transition-1);
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(0.5);
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+ }
