@@ -36,4 +36,14 @@ function removeClass (resultImg){
     resultImg.forEach(img => {
         img.classList.remove("show-img")
     })
-}
+};
+
+// ========================ask ================= 
+
+  const faqContent = document.querySelectorAll('.faq-content');
+
+faqContent.forEach( faqs => {
+    faqs.addEventListener("click", () => {
+        faqs.classList.toggle("active");
+    })
+});
