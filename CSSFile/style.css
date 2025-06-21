@@ -300,7 +300,7 @@ header{
     margin: 0;
     max-width: 100%;
     width: 100%;
-      height: 180vh;
+      height: 190vh;
     
       display: flex;
       justify-content: space-between;
@@ -378,6 +378,7 @@ header .head{
     color: var(---txt-offwhite);
     cursor: pointer;
     transition: var(--transition-1);
+    border: 1px solid #ffffff28;
 }
 .menu .menuIcon:hover{
     color: var(--card-1-color);
@@ -2852,3 +2853,134 @@ footer::before{
   text-transform: capitalize;
   opacity: 0.5;
 }
+
+ /* <!-- ============================================================
+    =====================service HTML start here======================
+    ============================================================ --> */
+    /* <!-- ============================================================
+    =====================pricing HTML start here======================
+    ============================================================ --> */
+.hero-title h2{
+    color: var(---txt-white);
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-title h2 span{
+    color: var(--btn-bg-color);
+}
+.price-container{
+    max-width: 100%;
+    width: 100%;
+    margin-top: 5%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.price-container .price-card{
+    width: 100%;
+    background: #022B36;
+    padding:30px 25px;
+    border-radius: 20px;
+   position: relative;
+   max-width: 100%;
+}
+.price-card .price-i{
+    color: var(---txt-white);
+    font-size: var(--font-h5);
+}
+.price-card .bold{
+    color: var(---txt-white);
+    text-align: left;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.price-card .priceTxt{
+    font-size: var(--font-16-small);
+    color: var(---txt-offwhite);
+    padding: 15px 0;
+    opacity: 0.8;
+    font-weight: 400;
+    border-bottom: 1px solid #ffffff77;
+}
+.price-desc{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+}
+.price-desc li{
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    text-align: left;
+    font-size: var(--font-14-xsmall);
+}
+.price-desc li i{
+    font-size: var(--font-16-small);
+}
+.price-desc .price-txt-on{
+    color: var(---txt-offwhite);
+}
+.price-desc li p{
+    font-weight: 400;
+    opacity: 0.9;
+}
+.price-desc .price-txt-off{
+    color: var(---txt-offwhite);
+    opacity: 0.7;
+}
+.price-count{
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.price-count span{
+    color: var(---txt-white);
+    font-weight: 700;
+    font-size: var(--font-h3);
+    text-transform: capitalize;
+}
+.price-count p{
+    color: var(---txt-offwhite);
+    opacity: 0.6;
+}
+
+.price-container .price-card:nth-child(3){
+    border: 2px solid var(--btn-bg-color);
+    box-shadow: #bfff4783 0px -5px 15px;
+    transform: scale(1.02);
+}
+.price-last{
+    margin-top: 5%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.price-last .bold{
+    color: var(---txt-white);
+}
+.price-last a{
+    font-size: var(--font-20-mid);
+    margin-top: 5px;
+    color: var(--btn-bg-color);
+    transition: var(--transition-1);
+     text-decoration: underline;
+    font-weight: 700;
+}
+.price-last a:hover{
+    text-decoration: none;
+}
+
+
+    
