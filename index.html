@@ -1013,6 +1013,16 @@
 
     <!-- ====================================javascript start here=================================== -->
     <script src="JsFile/main.js"></script>
+    <script>
+        // =========================video============= 
+            const overlay = document.getElementById("overlay");
+            const video = document.getElementById("myVideo");
+
+            overlay.addEventListener("click", () => {
+                  overlay.classList.add("hidden");
+                  video.play();
+            });
+    </script>
     
 </body>
 </html>

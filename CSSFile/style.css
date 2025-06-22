@@ -2882,7 +2882,7 @@ footer::before{
 .price-container .price-card{
     width: 100%;
     background: #022B36;
-    padding:30px 25px;
+    padding:30px 15px 30px 20px;
     border-radius: 20px;
    position: relative;
    max-width: 100%;
@@ -2895,12 +2895,13 @@ footer::before{
     color: var(---txt-white);
     text-align: left;
     margin: 10px 0;
+    
     text-transform: capitalize;
 }
 .price-card .priceTxt{
     font-size: var(--font-16-small);
     color: var(---txt-offwhite);
-    padding: 15px 0;
+    padding: 15px 5px;
     opacity: 0.8;
     font-weight: 400;
     border-bottom: 1px solid #ffffff77;
@@ -2951,7 +2952,7 @@ footer::before{
 }
 .price-count p{
     color: var(---txt-offwhite);
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .price-container .price-card:nth-child(3){
@@ -2984,3 +2985,228 @@ footer::before{
 
 
     
+
+
+ .billing-toggle {
+      background-color: #052029;
+      border-radius: 10px;
+     height: min-content;
+      margin: 10px auto;
+      width: fit-content;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      
+      position: relative;
+      flex: none;
+      justify-content: center;
+      align-items: center;
+      padding: 7px;
+      gap: 5px;
+
+    }
+
+    .billing-option {
+      padding:  16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: var(--font-16-small);
+      transition: 0.3s;
+    }
+
+    .billing-option span {
+      font-weight: normal;
+      font-size: 0.85em;
+      color: #aaa;
+      margin-left: 4px;
+    }
+
+    .billing-option.active {
+      background-color: #c4ff3f;
+      color: #000;
+    }
+    .billing-option.active span{
+        color: #000;
+    }
+
+    .billing-option:not(.active) {
+      color: #fff;
+    }
+
+    /* <!-- ==========trusted============  --> */
+    #trusted{
+        max-width: 100%;
+        
+    }
+    #trusted .container h2{
+        max-width: 100%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        text-transform: capitalize;
+       text-align: center;
+    }
+    #trusted .container p{
+        text-align: center;
+        max-width: 100%;
+        width: 60%;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    .trusted-container{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        
+    }
+    .trusted-container .trusted-card{
+        width: 100%;
+       max-width: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       justify-content: flex-start;
+       align-items: flex-start; 
+        
+ 
+    }
+    .trusted-card .trusted-content{
+        width: 100%;
+        background: var(--card-1-color);
+        padding: 25px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        box-shadow: rgba(0, 0, 0, 0.164) 0px 7px 29px 0px;
+        border: 1px solid #00000025;
+        transition: var(--transition-1);
+    }
+    .trusted-card .trusted-content:hover{
+        box-shadow: rgba(0, 0, 0, 0.247) 0px 7px 29px 0px;
+        border: 1px solid #0000003a;
+
+    }
+    
+    .trusted-content i{
+        font-size: var(--font-h3);
+        margin-bottom: 35px;
+        color: #00000049;
+    }
+
+
+    .trusted-img-info img{
+        width: 55px;
+        border-radius: 5px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .trusted-content p{
+        font-size: var(--font-18-semi);
+        color: var(---txt-xtra);
+        line-height: 30px;
+        
+        font-weight: 500;
+
+    }
+    .trusted-content .trusted-img-info{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    .trusted-img-info li{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .trusted-img-info li .bold{
+        color: #000;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    .trusted-img-info li p:last-child{
+        font-size: var(--font-14-xsmall);
+        font-weight: 600;
+    }
+
+     /* <!-- ============================================================
+    =====================testimonialsHTML start here======================
+    ============================================================ --> */
+
+    .lead-content{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .lead-content .lead-info{
+        width: 60%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .lead-info h3{
+        text-align: left;
+        width: 80%;
+        text-transform: capitalize;
+        margin-left:10px;
+    }
+    .lead-info p{
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-left:-20px;
+    }
+    .lead-content .lead-btns{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .lead-btns .lead-img-info{
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .lead-img-info img{
+        width: 200px;
+        max-width: 100%;
+    }
+    .lead-img-info .lead-txt{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 5px;
+    }
+    .lead-txt .lead-star{
+        max-width: 100%;
+        display: flex;
+        gap: 2px;
+    }
+    .lead-star i{
+        font-size: var(--font-22-big);
+        color:#FFAA0D;
+    }
+    .lead-star

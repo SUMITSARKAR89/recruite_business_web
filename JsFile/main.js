@@ -12,15 +12,19 @@ closeIcon.addEventListener("click", () => {
 });
 
 
+// =========================billing =============== 
 
-// =========================video============= 
-const overlay = document.getElementById("overlay");
-const video = document.getElementById("myVideo");
+ const options = document.querySelectorAll('.billing-option');
 
-overlay.addEventListener("click", () => {
-      overlay.classList.add("hidden");
-      video.play();
-});
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove active class from all
+                options.forEach(opt => opt.classList.remove('active'));
+
+                // Add active class to clicked one
+                option.classList.add('active');
+            });
+        });
 
 
 // =======================image container========= 
@@ -47,3 +51,6 @@ faqContent.forEach( faqs => {
         faqs.classList.toggle("active");
     })
 });
+
+
+
